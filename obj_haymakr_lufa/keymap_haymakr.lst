@@ -22,9 +22,9 @@
    8:keymap_haymakr.c ****          MPLY, LCTL,LALT,LGUI,FN0, SPC, LEFT,DOWN,RGHT,SPC, FN1, RGUI,RALT,RCTL,EQL),
    9:keymap_haymakr.c **** 
   10:keymap_haymakr.c ****   KEYMAP(TRNS, F1,  F2,  F3,  F4,  F5,                 F6,  F7,  F8,  F9,  F10, TRNS, \
-  11:keymap_haymakr.c ****          TRNS, TRNS,TRNS,TRNS,WH_U,TRNS,               TRNS,TRNS,TRNS,FN8, FN9, TRNS, \
+  11:keymap_haymakr.c ****          TRNS, TRNS,TRNS,TRNS,WH_U,PGUP,               TRNS,TRNS,TRNS,FN8, FN9, TRNS, \
   12:keymap_haymakr.c ****          TRNS, TRNS,FN20,FN21,FN22,FN23,FN4,      FN5, TRNS,MINS,EQL, FN10,FN11,BSLS, \
-  13:keymap_haymakr.c ****          TRNS, TRNS,TRNS,TRNS,WH_D,TRNS,     VOLU,     TRNS,FN13,FN14,LBRC,RBRC,FN12, \
+  13:keymap_haymakr.c ****          TRNS, TRNS,TRNS,TRNS,WH_D,PGDN,     VOLU,     TRNS,FN13,FN14,LBRC,RBRC,FN12, \
   14:keymap_haymakr.c ****          TRNS, WAKE,TRNS,TRNS,TRNS,TRNS,MPRV,VOLD,MNXT,TRNS,FN15,TRNS,TRNS,TRNS,TRNS),
   15:keymap_haymakr.c **** 
   16:keymap_haymakr.c ****   KEYMAP(TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,               TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
@@ -545,7 +545,7 @@
  505 005c 01        		.byte	1
  506 005d 01        		.byte	1
  507 005e F9        		.byte	-7
- 508 005f 01        		.byte	1
+ 508 005f 4B        		.byte	75
  509 0060 00        		.byte	0
  510 0061 00        		.byte	0
  511 0062 00        		.byte	0
@@ -575,7 +575,7 @@
  535 007a 01        		.byte	1
  536 007b 01        		.byte	1
  537 007c FA        		.byte	-6
- 538 007d 01        		.byte	1
+ 538 007d 4E        		.byte	78
  539 007e 00        		.byte	0
  540 007f A9        		.byte	-87
  541 0080 00        		.byte	0
@@ -768,17 +768,17 @@
  728               		.file 15 "../../tmk_core/common/debug.h"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 keymap_haymakr.c
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:2      *ABS*:000000000000003e __SP_H__
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:3      *ABS*:000000000000003d __SP_L__
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:4      *ABS*:000000000000003f __SREG__
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:5      *ABS*:0000000000000000 __tmp_reg__
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:6      *ABS*:0000000000000001 __zero_reg__
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:13     .text.action_get_macro:0000000000000000 action_get_macro
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:337    .progmem.data.__m.4729:0000000000000000 __m.4729
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:244    .progmem.data.__m.4732:0000000000000000 __m.4732
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:171    .progmem.data.__m.4735:0000000000000000 __m.4735
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:86     .progmem.data.__m.4738:0000000000000000 __m.4738
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:383    .progmem.data.fn_actions:0000000000000000 fn_actions
-/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cc1lQQZf.s:412    .progmem.data.keymaps:0000000000000000 keymaps
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:2      *ABS*:000000000000003e __SP_H__
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:3      *ABS*:000000000000003d __SP_L__
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:4      *ABS*:000000000000003f __SREG__
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:5      *ABS*:0000000000000000 __tmp_reg__
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:6      *ABS*:0000000000000001 __zero_reg__
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:13     .text.action_get_macro:0000000000000000 action_get_macro
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:337    .progmem.data.__m.4729:0000000000000000 __m.4729
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:244    .progmem.data.__m.4732:0000000000000000 __m.4732
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:171    .progmem.data.__m.4735:0000000000000000 __m.4735
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:86     .progmem.data.__m.4738:0000000000000000 __m.4738
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:383    .progmem.data.fn_actions:0000000000000000 fn_actions
+/var/folders/0t/kvl6kk9d4s327fss_3zj34vc3_bfct/T//cctqvIZj.s:412    .progmem.data.keymaps:0000000000000000 keymaps
 
 NO UNDEFINED SYMBOLS
